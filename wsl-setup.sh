@@ -92,7 +92,7 @@ echo -e "${YELLOW}"
 echo "Enter the staring path for WSL Bash [default: /c]:"
 echo -e "${NOCOLOR}"
 read -e START_FOLDER
-if [ -z "$START_FOLDER"]; then
+if [ -z "$START_FOLDER" ]; then
     START_FOLDER="/c"
 fi
 echo "Bash will start in $START_FOLDER"
