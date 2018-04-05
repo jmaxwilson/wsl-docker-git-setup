@@ -67,4 +67,6 @@ You can test them by running:
 
 `docker-compose version`
 
+`docker run hello-world`
+
 This makes it much easier to run most of the same docker scripts on Windows that you do on Linux or Mac by using WSL and Ubuntu Bash instead of GitBash and Git for Windows.
