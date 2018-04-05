@@ -13,7 +13,7 @@ echo -e "${NOCOLOR}"
 echo "This script configures WSL Bash for use with Docker and Git:"
 echo ''
 echo "* Creates .bashrc_wsl file that is sourced from .bashrc for customizing the bash"
-echo "* Installs docker-compose and its dependencies for use on the commandline"
+echo "* Installs docker-ce, docker-compose and their dependencies for use on the commandline"
 echo "* Adds a DOCKER_HOST environment variable in .bashrc_wsl to allow docker to connect to Docker for Windows"
 echo "* Adds a symlink /c that points to the c drive shared by Docker for Windows so that docker paths work properly"
 echo "* Adds a Git enabled prompt so that you can see Git branch information on the commandline"
