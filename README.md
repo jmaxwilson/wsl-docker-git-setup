@@ -2,7 +2,7 @@
 
 This is a shell script that can be run in the **Ubuntu for Windows Bash** running on the **Windows Subsystem for Linux (WSL)** to configure Bash for development using commandline **Docker** and **Git** commands in **Windows 10**.
 
-## Prerequisits and Configurartion
+## Prerequisits and Configuration
 
 - Windows 10 Professional
 - Windows Subsystem for Linux (WSL)
