@@ -2,7 +2,7 @@
 
 This is a shell script that can be run in the **Ubuntu for Windows Bash** running on the **Windows Subsystem for Linux (WSL)** to configure Bash for development using commandline **Docker** and **Git** commands in **Windows 10**.
 
-## Prerequisits and Configurartion
+## Prerequisits and Configuration
 
 - Windows 10 Professional
 - Windows Subsystem for Linux (WSL)
@@ -40,13 +40,13 @@ Once Docker for Windows has been installed, you will need to configure it so tha
 
 Git comes installed by default with Ubuntu for Windows. You can clone this repository immediately from your WSL Bash by running:
 
-> `git clone https://github.com/jmaxwilson/wsl-docker-git-setup.git`
+`git clone https://github.com/jmaxwilson/wsl-docker-git-setup.git`
 
 Once the code has been cloned you can run `wsl-setup.sh` to configure your WSL Bash to be able to communicate with Docker for Windows and install a git-enabled commandline prompt that makes it easier to work with git from WSL.
 
-> `cd wsl-docker-git-setup`
+`cd wsl-docker-git-setup`
 
-> `./wsl-setup.sh`
+`./wsl-setup.sh`
 
 The interactive shell script:
 
@@ -63,8 +63,8 @@ You should be able to run `docker` and `docker-compose` commands from the WSL Ub
 
 You can test them by running:
  
-> `docker info`
+`docker info`
 
-> `docker-compose version`
+`docker-compose version`
 
 This makes it much easier to run most of the same docker scripts on Windows that you do on Linux or Mac by using WSL and Ubuntu Bash instead of GitBash and Git for Windows.
