@@ -51,7 +51,7 @@ Once the code has been cloned you can run `wsl-setup.sh` to configure your WSL B
 The interactive shell script:
 
 - Creates `.bashrc_wsl` file that is sourced from `.bashrc` for customizing the bash
-- Installs `docker-compose` and its dependencies for use on the commandline
+- Installs `docker-ce` and `docker-compose` and their dependencies for use on the commandline
 - Adds a `DOCKER_HOST` environment variable in `.bashrc_wsl` to allow docker to connect to Docker for Windows
 - Adds a symlink `/c` that points to the drive shared by Docker for Windows (`/mnt/c`) so that docker paths will work properly
 - Adds a Git enabled prompt so that you can see Git branch information on the commandline
