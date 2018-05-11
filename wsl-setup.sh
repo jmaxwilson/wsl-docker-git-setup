@@ -17,6 +17,7 @@ echo "* Installs docker-ce, docker-compose and their dependencies for use on the
 echo "* Adds a DOCKER_HOST environment variable in .bashrc_wsl to allow docker to connect to Docker for Windows"
 echo "* Adds a symlink /c that points to the c drive shared by Docker for Windows so that docker paths work properly"
 echo "* Adds a Git enabled prompt so that you can see Git branch information on the commandline"
+echo "* Set the colors for ls so that directories are visually distinguishable from files by creating ~/.dircolors"
 echo "* Sets the default directory when WSL Bash starts"
 echo -e "${YELLOW}"
 read -r -p "Continue? [y/N] " response
@@ -83,6 +84,11 @@ rm -rf ~/.bash/bash-git-prompt
 ## Add lines to .bashrc_wsl to enable the bash-git-prompt
 #sudo echo "GIT_PROMPT_ONLY_IN_REPO=1" >> ~/.bashrc_wsl
 #sudo echo "source ~/.bash/bash-git-prompt/gitprompt.sh" >> ~/.bashrc_wsl
+
+# DIRCOLORS
+# Create ~/.dircolors and set the color of directories
+echo "STICKY_OTHER_WRITABLE 31;30;47 # dir that is sticky and other-writable (+t,o+w)
+OTHER_WRITABLE 31;30;47 # dir that is other-writable (o+w) and not sticky" > ~/.dircolors
 
 # DEFAULT START DIRECTORY
 # Prompt the user for the directory in which bash should start
