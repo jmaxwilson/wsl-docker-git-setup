@@ -1,6 +1,6 @@
 # wsl-docker-git-setup
 
-This is a shell script that can be run in the **Ubuntu for Windows Bash** running on the **Windows Subsystem for Linux (WSL)** to configure Bash for development using commandline **Docker** and **Git** commands in **Windows 10**.
+This is a shell script that can be run in the **Ubuntu for Windows Bash** running on the **Windows Subsystem for Linux (WSL)** to configure Bash for development using commandline **Docker** and **Git** commands on **Windows 10**. This makes it much easier to run most of the same docker scripts on Windows that you do on Linux or Mac by using WSL and Ubuntu Bash instead of GitBash and Git for Windows.
 
 ## Prerequisits and Configuration
 
@@ -53,7 +53,7 @@ The interactive shell script:
 - Creates `.bashrc_wsl` file that is sourced from `.bashrc` for customizing the bash
 - Installs `docker-ce` and `docker-compose` and their dependencies for use on the commandline
 - Adds a `DOCKER_HOST` environment variable in `.bashrc_wsl` to allow docker to connect to Docker for Windows
-- Adds a symlink `/c` that points to the drive shared by Docker for Windows (`/mnt/c`) so that docker paths will work properly
+- Adds a symlink `/c` that points to the C drive shared by Docker for Windows (`/mnt/c`) so that docker paths will work properly
 - Adds a Git enabled prompt so that you can see Git branch information on the commandline
 - Sets the default directory when WSL Bash starts
 
@@ -69,4 +69,19 @@ You can test them by running:
 
 `docker run hello-world`
 
-This makes it much easier to run most of the same docker scripts on Windows that you do on Linux or Mac by using WSL and Ubuntu Bash instead of GitBash and Git for Windows.
+You can now run most of the same docker scripts on Windows that you do on Linux or Mac by using WSL and Ubuntu Bash.
+
+![Animated GIF of Docker running in Ubuntu Bash running on Windows WSL](https://raw.githubusercontent.com/jmaxwilson/wsl-docker-git-setup/master/wsl-docker-git.gif "Example Docker running in Ubuntu Bash running on Windows WSL")
+
+## Additional Customization and Install Scripts
+This project also includes some additional scripts that are not run by the `./wsl-setup.sh` script but that can be run individually for additional customization:
+
+`./create-aliases.sh`     - Creates aliases that override the default options for `ls` and `tree`
+
+`./dircolors.sh`          - Creates a `~/.dircolors` file that overrides the display colors of directories
+
+`./git-dir-functions.sh`  - Creates `git-dir` and `git-all` functions to make it easy to run git commands on directories
+
+`./golang-install.sh`     - Installs [Go](https://golang.org) programming language support
+
+`./nodejs-install.sh`     - Installs [NodeJS](https://nodejs.org) programming language support

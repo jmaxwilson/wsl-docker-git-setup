@@ -1,5 +1,7 @@
 #!/bin/bash
 
+# Installs a git enabled prompt so that the current git branch will displayed on the prompt
+
 # Set up some output colors
 source definecolors.sh
 

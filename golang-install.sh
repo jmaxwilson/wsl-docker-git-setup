@@ -1,5 +1,7 @@
 #!/bin/bash
 
+# This script will install the Go programming language
+
 # INIT .BASHRC_WSL
 ./bashrc_wsl.sh
 

@@ -1,5 +1,9 @@
 #!/bin/bash
 
+# Installs docker and docker-compose
+# Adds a DOCKER_HOST environment variable in .bashrc_wsl to allow docker to connect to Docker for Windows
+# Adds a symlink /c that points to the c drive shared by Docker for Windows so that docker paths work properly
+
 # Set up some output colors
 source definecolors.sh
 

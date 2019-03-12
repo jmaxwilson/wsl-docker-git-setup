@@ -1,3 +1,5 @@
+# This file is sourced from other bash scripts in order to define colors
+
 # Set up some output colors
 BLUE='\033[0;36m'
 YELLOW='\033[0;33m'
