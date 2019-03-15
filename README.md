@@ -80,7 +80,7 @@ This project also includes some additional scripts that are not run by the `./ws
 
 `./dircolors.sh`          - Creates a `~/.dircolors` file that overrides the display colors of directories
 
-`./git-dir-functions.sh`  - Creates `git-dir` and `git-all` functions to make it easy to run git commands on directories
+`./git-dir-install.sh`    - Creates a `git-dir` function to make it easy to run git commands on directories
 
 `./golang-install.sh`     - Installs [Go](https://golang.org) programming language support
 
