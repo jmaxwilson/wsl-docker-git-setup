@@ -39,3 +39,9 @@ else
         cd \"\$INIT_DIR\" # return to the directory that we started in
 fi
 }" >>  ~/.bashrc_wsl
+
+# add bash tab completion for git commands for git-dir
+if [ ! -f ~/.bash_completion ]; then
+        touch ~/.bash_completion
+fi
+grep -q -F 'git-dir' ~/.bash_completion || printf "_xfunc git __git_complete git-dir __git_main" >> ~/.bash_completion
